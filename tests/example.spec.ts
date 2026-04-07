@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 
+// 1st Testcase
 test('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
@@ -7,6 +8,7 @@ test('has title', async ({ page }) => {
   await expect(page).toHaveTitle(/Playwright/);
 });
 
+// 2nd Testcases
 test('get started link', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
